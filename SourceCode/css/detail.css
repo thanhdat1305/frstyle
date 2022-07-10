@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.logo img{
+    width: auto;
+}
+.header-left{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.header-right ul{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.header-right ul li{
+    padding-left: 37px;
+    font-size: 20px;
+}
+.header-right i {
+    color: coral;
+}
+.header-right i:hover{
+    color: rgb(177, 66, 26);
+}
+.search button{
+    border: none;
+    background: white;
+}
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: none;
+}
+.search input[type="text"]{
+    width: 75px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 0 9px;
+    border: 3px solid rgb(177, 66, 26);
+}
+.search input[type="text"]:focus{
+    width: 220px;
+    border: 3px solid coral;
+    transition: 0.6s;
+}
+div#menu {
+    text-align: center;
+}
+#menu li{
+    display: inline-block;
+    padding: 0;
+}
+#menu li a{
+    display: block;
+    position: relative;
+    color: #262626;
+    letter-spacing: 1.3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+#menu li a span {
+    position: relative;
+    display: inline-block;
+}
+#menu li:hover a {
+    color: coral;
+    text-decoration: none;
+}
+#menu li:hover a span:before {
+    display: block;
+    background-color: coral;
+}
+#menu li a span:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #d8d8d8;
+    display: none;
+}
+#menu li:hover a ~ .menu-sub {
+    display: block;
+}
+#menu li .menu-sub {
+    position: absolute;
+    top: 126px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+    display: none;
+    z-index: 10;
+    overflow: hidden;
+}
+#menu li .menu-sub ul {
+    margin: 20px 2% 20px;
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+#menu li .menu-sub ul li {
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding: 10px 48px;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0;
+    width: 32%;
+}
+#menu li .menu-sub ul li a {
+    padding: 0;
+    text-transform: capitalize;
+}
+#menu li .menu-sub a {
+    font-size: 12px;
+    color: #262626;
+    padding: 20px 0;
+}
+#menu li .menu-sub ul li a:hover{
+    color: coral;
+}
+/* Phan Detail */
+.all-detail{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.slide-anh-san-pham {
+    margin-bottom: 20px;
+}
+.details {
+    padding-bottom: 15px;
+}
+.Product-name-details h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Product-price-details {
+    margin-bottom: 20px;
+}
+.Product-price-details span{
+    font-size: 18px;
+    color: #5f5f5f;
+    border-radius: 17px;
+    padding: 3px 13px;
+    box-shadow: 0 2px 5px 7px coral;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.Product-code {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.size{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.size span{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.size a{
+    color: rgb(121, 121, 121);
+    font-size: 16px;
+    font-weight: 600;
+}
+.size a:hover{
+    color: coral;
+}
+.assorted-sizes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+}
+.number-size {
+    display: block;
+    position: relative;
+    padding-left: 43px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+.number-size input {
+    position: absolute;
+    opacity: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(214, 187, 177);
+    border-radius: 50%;
+}
+.number-size:hover input ~ .checkmark {
+    background-color: rgb(228, 157, 116);
+}
+.number-size input:checked ~ .checkmark {
+    background-color: rgb(177, 66, 26);
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.number-size input:checked ~ .checkmark:after {
+    display: block;
+}
+.number-size .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.buy-add {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.buy-now button, .add-to-cart button{   
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.buy-now button{
+    margin-bottom: 15px;
+    background: rgb(168, 168, 168);
+    color: black;
+}
+.buy-now button:hover{
+    background: rgb(196, 196, 196);
+    color: rgb(107, 107, 107);
+}
+.add-to-cart button{
+    background: rgb(0, 0, 0);
+    color: coral;
+}
+.add-to-cart button:hover{
+    background: rgb(46, 46, 46);
+    color: rgb(219, 130, 98);
+}
+h2.text-center.title {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    padding: 20px 0;
+}
+.products.row {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-img img{
+    display: inline-block;
+}
+p.product-name a{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+p.product-name a:hover{
+    text-decoration: none;
+}
+p.product-price {
+    color: rgb(119, 119, 119);
+    font-size: 17px;
+    font-weight: bold;
+}
+span.price-decoration {
+    text-decoration: line-through;
+    color: rgb(177, 177, 177);
+}
+.btn-see-more {
+    border: none;
+    border-radius: 6px;
+    background: black;
+    padding: 10px 28px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.btn-see-more a{
+    color: white;
+    text-decoration: none;
+}
+.btn-see-more a:hover{
+    color: coral;
+}
+/* Phan Footer */
+footer {
+    margin-top: 35px;
+    background-color: #000000;
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+.footer-logo {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.footer-logo a {
+    background-color: #fff;
+    padding: 5px 10px;
+    width: 92px;
+    display: inline-block;
+}
+.get-news {
+    margin-bottom: 70px;
+    color: #fff;
+    position: relative;
+}
+.get-news input:focus {
+    border-bottom: 2px solid #b0b0b0;
+}
+input[type="text"]:active, input[type="text"]:focus {
+    outline: none;
+}
+.get-news input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #b0b0b0;
+    width: 100%;
+    background: transparent;
+    color: #f0f0f0;
+    font-size: 20px;
+    padding: 0 40px 10px 0
+}
+.get-news button {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+    height: 100%;
+    font-size: 42px;
+}
+footer .get-news button:hover{
+    color: coral;
+}
+.items-footer {
+    height: 240px;
+    text-align: left;
+    display: inline-block;
+}
+.items-footer .item-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.items-footer a, .copyright{
+    color: coral;
+}
+.items-footer a:hover{
+    color: rgb(238, 189, 171);
+}
+.items-footer p{
+    margin-bottom: 15px;
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+}

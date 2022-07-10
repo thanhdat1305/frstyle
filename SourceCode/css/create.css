@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+/* Phần Header */
+.logo img{width: auto;}
+
+.logo{padding-bottom: 15px; padding-top: 15px;}
+
+.header-right ul{float: right; display: flex; align-items: center;}
+
+.header-right ul li{padding-left: 37px; font-size: 20px;}
+
+.header-right i {color: coral;}
+
+.header-right i:hover{color: rgb(177, 66, 26);}
+
+.search button{border: none; background: white;}
+
+.search input[type="text"]{width: 75px; height: 35px; display: inline-block; border-radius: 20px; font-size: 16px; padding: 0 9px; border: 3px solid rgb(177, 66, 26);}
+
+.search input[type="text"]:focus{width: 220px; border: 3px solid coral; transition: 0.6s;}
+
+div#menu {text-align: center;}
+
+#menu li{display: inline-block; padding: 0;}
+
+#menu li a{display: block; position: relative; color: #262626; letter-spacing: 1.3px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px 25px;}
+
+#menu li a span {position: relative; display: inline-block;}
+
+#menu li:hover a {color: coral; text-decoration: none;}
+
+#menu li:hover a span:before {display: block; background-color: coral;}
+
+#menu li a span:before { content: ""; position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background-color: #d8d8d8; display: none;}
+
+#menu li:hover a ~ .menu-sub {display: block;}
+
+#menu li .menu-sub { position: absolute; top: 126px; left: 0; width: 100%; height: auto; background-color: #fff; border-top: 1px solid #f0f0f0; text-align: center; display: none; z-index: 10; overflow: hidden;}
+
+#menu li .menu-sub ul { margin: 20px 2% 20px; width: 50%; display: inline-block; text-align: left;}
+
+#menu li .menu-sub ul li {display: inline-block; white-space: nowrap; text-transform: uppercase; padding: 10px 48px; font-weight: bold; font-size: 13px; margin: 0; width: 32%;}
+
+#menu li .menu-sub ul li a {padding: 0; text-transform: capitalize;}
+
+#menu li .menu-sub ul li a:hover, .btn-see-more a:hover{color: coral;}
+
+#menu li .menu-sub a { font-size: 12px; color: #262626; padding: 20px 0;}
+
+/* Main-content */
+.create-account{width: 400px; padding: 20px 0; margin: 0 auto 0;}
+
+.create-account h3{margin-bottom: 45px; text-transform: uppercase; font-size: 40px; font-weight: bold;}
+
+.Name , .Email, .Password, .Create{margin-bottom: 20px;}
+
+.Name input, .Email input, .Password input, .Create button{width: 100%;}
+
+.create-account input[type="text"], .create-account input[type="password"]{height: 50px; font-size: 15px; padding-left: 10px; border: 3px solid coral;}
+
+.create-account input[type="text"]:focus, .create-account input[type="password"]:focus{border: 3px solid rgb(177, 66, 26);}
+
+.create-account button{background: black; border: none; height: 60px; color: coral; text-transform: uppercase; font-size: 26px; font-weight: 600; letter-spacing: 2px;}
+
+.create-account button:hover{background: rgb(46, 46, 46); color: rgb(255, 145, 106);}
+
+.text-center.YHAA\&FYP {line-height: 2; font-size: 15px; text-transform: uppercase;}
+
+.text-center.YHAA\&FYP a {color: coral; font-weight: 600;}
+
+.text-center.YHAA\&FYP a:hover{color: rgb(170, 45, 0);}
+
+/* Phan Footer */
+footer {margin-top: 35px; background-color: #000000; padding-top: 55px; padding-bottom: 45px;}
+
+.footer-logo {text-align: center; margin-bottom: 60px;}
+
+.footer-logo a {background-color: #fff; padding: 5px 10px; width: 92px; display: inline-block;}
+
+.get-news {margin-bottom: 70px; color: #fff; position: relative;}
+
+.get-news input:focus {border-bottom: 2px solid #b0b0b0;}
+
+input[type="text"]:active, input[type="text"]:focus {outline: none;}
+
+.get-news input {display: block; border: none; border-bottom: 2px solid #b0b0b0; width: 100%; background: transparent; color: #f0f0f0; font-size: 20px; padding: 0 40px 10px 0}
+
+.get-news button {position: absolute; top: -20px; right: 0; background: transparent; border: none; padding: 0; height: 100%; font-size: 42px;}
+
+footer .get-news button:hover{color: coral;}
+
+.items-footer { display: inline-block; height: 240px; text-align: left;}
+
+.items-footer .item-title {font-size: 20px; color: white; margin-bottom: 20px;}
+
+.items-footer a, .copyright{color: coral;}
+
+.items-footer a:hover{color: rgb(238, 189, 171);}
+
+.items-footer p{margin-bottom: 15px; font-size: 15px; letter-spacing: 1.4px; font-weight: 600;}
